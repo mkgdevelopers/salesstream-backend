@@ -8,9 +8,7 @@ const port = process.env.PORT || 5000;
 
 // Middlewares
 app.use(cors({
-  origin: 'https://salesstream.vercel.app', // your frontend URL
-  methods: 'GET,POST,PUT,DELETE',
-  credentials: true
+  origin:'http://localhost:5173'
 }));
 app.use(express.json());
 
